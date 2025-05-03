@@ -644,6 +644,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/assets/scss/stars.scss';
-@import '@/assets/scss/style.scss';
+@use '@/assets/scss/stars' as *;
+@use '@/assets/scss/style' as *;
 </style>
