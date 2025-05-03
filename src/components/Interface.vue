@@ -49,23 +49,6 @@
           <p>Above Angle <input class="userang" v-model="userData.viewAng" /></p>
         </div>
 
-        <div class="interface-group trythis">
-          <p>
-            <button @click="solarFlip">
-              <i class="fas fa-sun"></i>Visit The Solar System
-            </button>
-          </p>
-        </div>
-
-        <div class="interface-group credits">
-          <div>
-            <p>
-              <a href="https://wovenit.nz/" target="_blank">
-                <img src="" alt="Woven IT Logo" />
-              </a>
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </section>

@@ -14,8 +14,10 @@ export default {
    * @returns {Promise} - Promise with the satellite data
    */
   getSatellitesAbove(lat, lon, alt, viewAng, categoryId) {
+    // Ensure CORS_PROXY ends with a slash
+    const formattedProxy = CORS_PROXY.endsWith('/') ? CORS_PROXY : `${CORS_PROXY}/`;
     return axios.get(
-      `${CORS_PROXY}https://api.n2yo.com/rest/v1/satellite/above/${lat}/${lon}/${alt}/${viewAng}/${categoryId}/&apiKey=${API_KEY}`
+      `${formattedProxy}https://api.n2yo.com/rest/v1/satellite/above/${lat}/${lon}/${alt}/${viewAng}/${categoryId}?apiKey=${API_KEY}`
     );
   }
 };
